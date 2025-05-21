@@ -28,6 +28,8 @@ _async_job() {
 	# Disable xtrace as it would mangle the output.
 	setopt localoptions noxtrace
 
+	sleep 0.05
+
 	# Store start time for job.
 	float -F duration=$EPOCHREALTIME
 
